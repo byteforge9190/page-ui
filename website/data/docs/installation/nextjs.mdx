@@ -1,7 +1,7 @@
 ---
 title: 'Next.js installation guide'
 date: '2024-05-01'
-lastmod: '2024-05-01'
+lastmod: '2024-05-19'
 tags:
   - 'documentation'
   - 'guide'
@@ -9,14 +9,29 @@ tags:
   - 'installation'
   - 'nextjs'
   - 'react'
+  - 'tailwindcss'
 
-summary: 'Learn how to install Page UI in your Next.js app. Install Tailwind CSS and Shadcn UI to get started.'
+summary: 'Learn how to install Page UI landing page components in your Next.js app. Install Tailwind CSS and configure the codebase in just a few steps.'
 layout: PostHub
 ---
 
 <span className="text-xl not-prose">
   Learn how to install Page UI in your Next.js app.
 </span>
+
+<br />
+
+<Protip
+  description={
+    <>
+      Skip the setup and use{' '}
+      <a className="fancy-link" href="https://shipixen.com">
+        Shipixen
+      </a>{' '}
+      to get a codebase with all components set up.
+    </>
+  }
+/>
 
 <br />
 
@@ -34,7 +49,7 @@ npx create-next-app@latest my-app --typescript --tailwind --eslint
 
 <StepCard stepNumber={2}>
 
-## Run the CLI
+## Run the Page UI CLI
 
 ```bash
 npx @page-ui/wizard@latest init
@@ -212,10 +227,6 @@ Add the below to your `global.css` file.<br/>
 
 </StepCode>
 
-<br />
-
-You can update colors from any documentation page by clicking on the color palette dropdown or by going to the [Theme Explorer](https://shipixen.com/color-theme-explorer-shadcn).
-
 </StepCard>
 
 <br />
@@ -274,19 +285,17 @@ export default function RootLayout({
 
 </StepCard>
 
-<br />
+## Troubleshooting
 
-<Protip
-  description={
-    <>
-      Skip the setup and use{' '}
-      <a className="fancy-link" href="https://shipixen.com">
-        Shipixen
-      </a>{' '}
-      to get a codebase with all components set up.
-    </>
-  }
-/>
+Something not quite right? Check out the [sample repository](https://github.com/Shipixen/page-ui-nextjs-example) for a full working example.
+
+## Theming
+
+Get new themes directly from the docs (open any component documentation → select a theme from the dropdown and scroll down to copy to clipboard).
+
+You can also [explore themes here](https://shipixen.com/color-theme-explorer-shadcn).
+
+Alternatively, you can change `data/config/color.js` manually.
 
 ## Next steps
 
