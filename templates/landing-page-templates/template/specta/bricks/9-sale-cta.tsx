@@ -49,7 +49,7 @@ export default function Component() {
           </LandingSocialProof>
         </>
       }
-      ctaHref="https://gum.co/product"
+      ctaHref="#"
       ctaLabel="Sign up now"
       withBackgroundGlow
       withBackground
