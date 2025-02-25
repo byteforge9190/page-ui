@@ -42,7 +42,7 @@ export const LandingShowcase = ({
         withBackground && variant === 'secondary'
           ? 'bg-secondary-100/20 dark:bg-secondary-900/10'
           : '',
-        withBackgroundGlow ? 'overflow-x-hidden' : '',
+        withBackgroundGlow ? 'relative overflow-x-hidden' : '',
         className,
       )}
     >
